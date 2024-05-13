@@ -14,12 +14,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 SECRET_KEY = 'nry0nkzzcnj()7fg=l!3-3e^@8x$@0wfvn3zp$*(!0ft)eaedj'
 
-DEBUG = False  # Set to False in production
+DEBUG = False if 'ON_RENDER' in os.environ else True
 
-ALLOWED_HOSTS = ['web-chat-using-qkd.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['0.0.0.0', 'web-chat-using-qkd.onrender.com'] if 'ON_RENDER' in os.environ else ['localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
