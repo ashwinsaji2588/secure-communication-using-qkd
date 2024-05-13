@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'web-chat-using-qkd.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://web-chat-using-qkd.onrender.com']
+
 
 # Application definition
 
