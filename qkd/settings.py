@@ -25,7 +25,7 @@ SECRET_KEY = 'nry0nkzzcnj()7fg=l!3-3e^@8x$@0wfvn3zp$*(!0ft)eaedj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'web-chat-using-qkd.onrender.com']
 
 
 # Application definition
